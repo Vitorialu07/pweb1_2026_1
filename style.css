@@ -3,18 +3,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    font-size: 3rem;
+    color: #ff4d4d;
+    text-shadow: 2px 2px 4px #000;
 }
 
 body {
     font-family: 'Georgia', serif;
-    background-color: #0a0a0a; /* Preto profundo */
+    background-color: #0a0a0a; /* Preto do fundo */
     color: #e0e0e0; /* Cinza claro para leitura */
     line-height: 1.6;
 }
 
 
 header {
-    background: linear-gradient(to bottom, #4a0404, #0a0a0a); /* Gradiente vermelho sangue */
+    background: linear-gradient(to bottom, #4a0404, #0a0a0a); /* De vermelho para preto */
     color: #fff;
     text-align: center;
     padding: 3rem 1rem;
@@ -36,24 +42,70 @@ nav {
     z-index: 1000;
 }
 
+/* Remove estilos padrão da lista */
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo base dos links (mantendo sua cor e peso) */
 nav a {
     color: #ff4d4d;
     text-decoration: none;
     margin: 0 1.5rem;
     font-weight: bold;
     transition: 0.3s;
+    display: block;
 }
 
+/* Efeito Glow que você criou */
 nav a:hover {
     color: #fff;
     text-shadow: 0 0 10px #ff0000;
+}
+
+/* --- LÓGICA DO SUBMENU --- */
+
+.dropdown {
+    position: relative; /* Base para o submenu não fugir */
+}
+
+.submenu {
+    display: none; /* Esconde */
+    position: absolute;
+    top: 100%; /* Brota exatamente abaixo do menu */
+    left: 0;
+    background-color: #1a1a1a; /* Mesma cor do seu nav */
+    list-style: none;
+    padding: 0.5rem 0;
+    min-width: 180px;
+    border-top: 2px solid #ff4d4d; /* Linha de destaque */
+}
+
+/* Faz o submenu aparecer */
+.dropdown:hover .submenu {
+    display: block;
+}
+
+/* Ajuste dos links dentro do submenu */
+.submenu li a {
+    margin: 0;
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+}
+
+/* Hover específico para o fundo do item do submenu */
+.submenu li a:hover {
+    background-color: #262626;
 }
 
 
 .container { 
     display: grid;
     
-    grid-template-columns: 380px 1fr 200px; 
+    grid-template-columns: 370px 1fr 200px; 
     gap: 20px;
     padding: 20px;
     max-width: 1400px;
