@@ -77,7 +77,7 @@ nav a:hover {
     position: absolute;
     top: 100%; /* Brota exatamente abaixo do menu */
     left: 0;
-    background-color: #1a1a1a; /* Mesma cor do seu nav */
+    background-color: #1a1a1a; 
     list-style: none;
     padding: 0.5rem 0;
     min-width: 180px;
