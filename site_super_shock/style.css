@@ -7,3 +7,8 @@
     height: 150px;
     border: 3px solid var(--amarelo);
 }
+.hero-section{
+    background: linear-gradient(45deg, var(--azul-escuro), #1a1a2e);
+    min-height: 100vh;
+    
+}
