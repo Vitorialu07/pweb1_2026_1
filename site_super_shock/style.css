@@ -12,3 +12,35 @@
     min-height: 100vh;
     
 }
+.btn-menu{
+    background: none;
+    border: none;
+    padding: 5px;
+}
+.menu-lateral{
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: var(--azul-escuro);
+    transition: left 0.3s;
+    padding-top: 80px;
+    z-index: 1000;
+}
+.menu-lateral.ativa{
+    left: 0;
+}
+
+.menu-lateral a{
+    list-style: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+    border-bottom: 1px solid #1a1a2e
+}
+.menu-lateral ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
