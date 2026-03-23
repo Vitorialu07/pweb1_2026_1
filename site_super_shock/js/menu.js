@@ -6,6 +6,6 @@ function showMenu(){
     if(menuLateral.classList.contains('ativa')){
         iconMenu.src = "img/icon-close-menu.png";
     } else{
-        iconMenu.src = "img/icon-hamburger-menu.png"
+        iconMenu.src = "img/icon-hamburger-menu.png";
     }
 }
