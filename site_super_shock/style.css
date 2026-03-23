@@ -12,6 +12,13 @@
     min-height: 100vh;
     
 }
+@media(max-width:768px){
+    .hero-image{
+        width: 120px;
+        height: 120px;
+    }
+}
+
 .btn-menu{
     background: none;
     border: none;
