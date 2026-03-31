@@ -9,7 +9,7 @@ body {
   font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
   background-color: #ffffff;
   color: #1a1a1a;
-  line-height: 1.6;
+  line-height: 1.7;
   padding: 20px;
 }
 
@@ -19,6 +19,20 @@ body {
   --zeiss-light-blue: #0050b3;
   --zeiss-gray: #f5f7fa;
   --text-gray: #555;
+}
+
+
+/* ===== legenda das fotos  ===== */
+figure {
+  margin: 30px 0;
+}
+
+figcaption {
+  font-size: 14px;
+  color: #777;
+  margin-top: 8px;
+  text-align: center;
+  font-style: italic;
 }
 
 /* ===== HEADER ===== */
@@ -78,76 +92,100 @@ header img:hover {
   font-weight: 600;
 }
 
-.nav-link.disabled {
-  color: #aaa;
-  pointer-events: none;
+/* CARD PG INDEX */
+.card img {
+  height: 220px;
+  object-fit: cover;
 }
 
-/* ===== LAYOUT ===== */
-main {
-  margin-top: 40px;
+.card {
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* ===== CONTEÚDO (ESTILO REVISTA) ===== */
+article {
+  max-width: 1000px;
+  margin: 50px auto;
 }
 
 section {
-  margin-bottom: 50px;
-  padding: 30px;
+  padding: 40px;
   background: #ffffff;
-  border-radius: 12px;
+  border-radius: 16px;
   transition: all 0.3s ease;
 }
 
 section:hover {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
 }
 
-/* ===== TÍTULOS ===== */
+/* ===== TÍTULO PRINCIPAL ===== */
 h1 {
-  font-size: 28px;
+  font-size: 34px;
   font-weight: 600;
   color: var(--zeiss-blue);
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   letter-spacing: -0.5px;
+  line-height: 1.3;
 }
 
-/* ===== TEXTOS ===== */
+/* ===== PARÁGRAFOS ===== */
 p {
   color: var(--text-gray);
-  margin-bottom: 15px;
-  font-size: 16px;
+  margin-bottom: 18px;
+  font-size: 17px;
+  text-align: justify;
 }
 
-/* ===== LISTA ===== */
-ul {
-  margin: 20px 0;
-  padding-left: 20px;
+/* ===== PRIMEIRO PARÁGRAFO DESTACADO ===== */
+section p:first-of-type {
+  font-size: 19px;
+  color: #222;
 }
 
-ul li {
-  margin-bottom: 10px;
-  color: #333;
-  position: relative;
-}
-
-/* ===== ASIDE (DESTAQUE PREMIUM) ===== */
-aside {
-  background: linear-gradient(135deg, #003a8f, #001f4d);
-  color: white;
-  padding: 30px;
+/* ===== CARROSSEL ===== */
+.carousel {
+  max-width: 900px;
+  margin: 50px auto;
   border-radius: 16px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
 }
 
-aside h1 {
-  color: #ffffff;
+/* imagens */
+.carousel img {
+  height: 450px;
+  object-fit: cover;
+}
+.img-top {
+  object-position: 50% 30%;
 }
 
-aside p {
-  color: #e0e6f0;
+/* legenda */
+.carousel-caption {
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  border-radius: 10px;
+  padding: 20px;
 }
 
-/* ===== GRID AJUSTES (caso não use bootstrap direito) ===== */
-.row {
-  margin-bottom: 30px;
+.carousel-caption h5 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.carousel-caption p {
+  font-size: 14px;
+  color: #eee;
+}
+
+/* botões */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
 }
 
 /* ===== RESPONSIVO ===== */
@@ -159,14 +197,14 @@ aside p {
   }
 
   h1 {
-    font-size: 22px;
+    font-size: 26px;
   }
 
   section {
-    padding: 20px;
+    padding: 25px;
   }
 
-  aside {
-    margin-top: 20px;
+  .carousel img {
+    height: 250px;
   }
 }

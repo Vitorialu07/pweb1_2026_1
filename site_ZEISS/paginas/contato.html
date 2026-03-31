@@ -39,6 +39,29 @@
         </li>
       </ul>
     </div>
+    <iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=-52.621791958808906%2C-27.103330198682055%2C-52.61677086353303%2C-27.10027394475843&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?#map=18/-27.101802/-52.619281">Ver mapa maior</a></small>
+
+    <iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=-52.619428932666786%2C-27.102589987764706%2C-52.61691838502884%2C-27.10106186112826&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?#map=19/-27.101826/-52.618174">Ver mapa maior</a></small>
  
+ <p> Verifique qual a melhor lente para vc </p>
+     <form id="formReceita">
+          <h4>Olho Direito (OD)</h4>
+          <input type="number" step="0.25" placeholder="Esférico" id="od_esf" class="form-control mb-2">
+          <input type="number" step="0.25" placeholder="Cilíndrico" id="od_cil" class="form-control mb-2">
+          <input type="number" placeholder="Eixo" id="od_axis" class="form-control mb-2">
+
+          <h4>Olho Esquerdo (OE)</h4>
+          <input type="number" step="0.25" placeholder="Esférico" id="oe_esf" class="form-control mb-2">
+          <input type="number" step="0.25" placeholder="Cilíndrico" id="oe_cil" class="form-control mb-2">
+          <input type="number" placeholder="Eixo" id="oe_axis" class="form-control mb-2">
+
+          <h4>Adição (para perto)</h4>
+          <input type="number" step="0.25" placeholder="ADD" id="add" class="form-control mb-3">
+
+          <button type="button" class="btn btn-primary" onclick="analisarReceita()">Analisar</button>
+        </form>
+
+        <div id="resultado" class="mt-4"></div>
+
 </body>
 </html>
