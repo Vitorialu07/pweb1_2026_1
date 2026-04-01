@@ -9,6 +9,75 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="menu.js"></script>
   </head>
+
+
+
+
+
+
+
+<!--Enio do Curriculo pos clicar no botão do curriculo -->
+
+  <div class="modal fade" id="modalTrabalhe" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Cabeçalho -->
+      <div class="modal-header">
+        <h5 class="modal-title">Trabalhe Conosco</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Corpo -->
+      <div class="modal-body">
+        <form>
+
+          <div class="mb-3">
+            <label class="form-label">Nome</label>
+            <input type="text" class="form-control" placeholder="Seu nome completo">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="seuemail@gmail.com">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Telefone</label>
+            <input type="tel" class="form-control" placeholder="(00) 00000-0000">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Área de interesse</label>
+            <select class="form-select">
+              <option>Selecione</option>
+              <option>Vendas</option>
+              <option>Administrativo</option>
+              <option>Técnico em Ótica</option>
+            </select>
+          </div>
+
+
+          <div class="mb-3">
+            <label class="form-label">Currículo</label>
+            <input type="file" class="form-control">
+          </div>
+
+        </form>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
   <body>
     <!--Header-->
     <div class="row">
@@ -43,16 +112,18 @@
 
     </div>
     <main>
-      <article>
+      <<article class="article-home">>
         <div class="row">
         
          <div class="col-xs-12 col-sm-6 col-md-7">
            <!--Sessions -->
         <section>
-          <h1>Zeiss Vision Center Chapecó</h1>
+          <h1>Zeiss Vision Center</h1>
         <p class="lead">Tecnologia, precisão e excelência em cuidado com a visão</p>
           <p>
-            O Zeiss Vision Center Chapecó é uma referência nacional em tecnologia óptica e cuidado com a visão, sendo reconhecido como o primeiro centro da ZEISS no Brasil. Localizado na Avenida Porto Alegre, em Chapecó, o espaço foi idealizado para oferecer uma experiência premium, aliando inovação tecnológica, precisão e excelência no atendimento. Com o sucesso da unidade pioneira, a marca também expandiu sua presença na cidade com uma segunda unidade na Avenida Getúlio Vargas, reforçando seu compromisso com qualidade e acessibilidade. Integrando tradição e inovação no setor óptico, o Zeiss Vision Center Chapecó se destaca por proporcionar soluções visuais avançadas, consolidando-se como um dos principais representantes da marca no país.
+            O Zeiss Vision Center Chapecó é uma referência nacional em tecnologia óptica e cuidado com a visão, sendo reconhecido como o 
+            primeiro centro da ZEISS no Brasil. Destacando-se por proporcionar soluções visuais avançadas, tem 
+            consolidado a representatividade de uma das principais marcas do ramo óptico mundial no mercado brasileiro.
           </p>
         </section>
         <!-- bootstrapde imagem passando -->
@@ -82,16 +153,20 @@
             </button>
           </div>
         <section>
-          <h1>Mas o que é o ZEISS</h1>
+          <h1>O que é o ZEISS?</h1>
           <p>
-            Fundada em 1846 por Carl Zeiss, na cidade de Jena, Alemanha, a ZEISS nasceu como uma pequena oficina de mecânica de precisão especializada na produção de microscópios. Com o tempo, e especialmente por meio da colaboração com o cientista Ernst Abbe, a empresa revolucionou o campo da óptica, estabelecendo novos padrões de qualidade e inovação.
+            A Zeiss é uma empresa de desenvolvimento de equipamentos e sistemas ópticos. Fundada por Carl Zeiss no ano de 1846, em Jena, na Alemanha,
+            iniciou suas atividades como uma pequena fabricante e vendedora de microscópios. Posteriormente, o físico Ernest Abbe e o químico Otto 
+            Schott juntaram-se à Zeiss e elevaram ainda mais a eficiência das lentes produzidas pela empresa, estabelecendo novos padrões
+            mundiais de tecnologia e inovação e colocando a Zeiss na vanguarda da tecnologia óptica.  
           </p>
           <p>
-            Atualmente, a ZEISS é reconhecida mundialmente como líder em tecnologia óptica e optoeletrônica, atuando em áreas como saúde, indústria de semicondutores e lentes oftálmicas, sempre com foco em precisão, excelência e avanço tecnológico.
+            Atualmente, a ZEISS é reconhecida mundialmente como líder em tecnologia óptica e optoeletrônica. Responsável por diversas inovações
+            em design e engenharia em seus campos de atuação ao longo da história, destaca-se seu pelo foco na precisão e excelência de seus produtos.
           </p>
           <figure>
             <img src="../site_ZEISS/imagens/projetor-do-planetário-de-zeiss-mark-iv-68289383.webp" class="img-fluid destaque" alt="">
-            <figcaption>OA equipe da Zeiss Vision Center Chapecó</figcaption>
+            <figcaption>Carl Zeiss, fundador da Zeiss company</figcaption>
           </figure>
           <figure>
             <img src="../site_ZEISS/imagens/labtelescopio.jpg" class="img-fluid destaque" alt="">
@@ -102,14 +177,18 @@
         <section>
           <h1>ZEISS e a Exploração Espacial</h1>
           <p>
-            A excelência da ZEISS também ultrapassou os limites da Terra. Durante a missão Apollo 11, em 1969, que marcou a chegada do homem à Lua, equipamentos ópticos de altíssima precisão foram fundamentais para registrar esse momento histórico. As lentes utilizadas nas câmeras desenvolvidas em parceria com a NASA contavam com tecnologia avançada, alinhada aos rigorosos padrões de qualidade que consagraram a ZEISS mundialmente.
+            A excelência da ZEISS também ultrapassou os limites da Terra. Durante a missão Apollo 11, em 1969, que marcou a chegada do homem à Lua, 
+            equipamentos ópticos de altíssima precisão foram fundamentais para registrar esse momento histórico. As lentes utilizadas nas câmeras 
+            desenvolvidas em parceria com a NASA contavam com tecnologia avançada, alinhada aos rigorosos padrões de qualidade que consagraram a 
+            ZEISS mundialmente.
           </p>
           <figure>
             <img src="../site_ZEISS/imagens/lua.jpg" class="img-fluid destaque" alt="">
-            <figcaption>OA equipe da Zeiss Vision Center Chapecó</figcaption>
+            <figcaption>Nesse contexto, lentes de câmera Zeiss foram desenvolvidas para uso no espaço</figcaption>
           </figure>
           <p>
-            Esse marco reforça o compromisso da empresa com a inovação e a precisão, demonstrando como sua expertise em óptica contribuiu para uma das maiores conquistas da humanidade.
+            Esse marco reforça o compromisso da empresa com a inovação e a precisão, demonstrando como sua expertise em óptica contribuiu 
+            para uma das maiores conquistas da humanidade.
           </p>
         </section>
 
@@ -120,7 +199,7 @@
         <div class="col-xs-6 col-md-5">
           <!--Aside-->
           <aside class="bg-light p-3 rounded shadow">
-             <h1>Áreas de Atuação da ZEISS</h1>
+             <h1>Áreas de Atuação da ZEISS Company</h1>
           <p>
             Desde o final do século XIX, impulsionada pelas descobertas de Ernst Abbe, a ZEISS expandiu sua atuação para diversos campos da óptica e da tecnologia de precisão. Ao longo das décadas, a empresa consolidou sua presença global, desenvolvendo soluções inovadoras que impactam diferentes setores da ciência, da indústria e do cotidiano.
           </p>
@@ -170,8 +249,61 @@
 
           </div>
            <p>
-            Essa diversidade de áreas demonstra o compromisso da ZEISS com a inovação contínua, a precisão e a excelência tecnológica, posicionando a empresa como referência mundial em óptica e optoeletrônica.
+            Essa diversidade de áreas demonstra o compromisso da ZEISS com a inovação contínua, a precisão e a excelência tecnológica, 
+            posicionando a empresa como referência mundial em óptica e optoeletrônica.
           </p>
+
+          <br>
+
+          <h1>Missão, Visão e Valores</h1>
+
+          <div class="accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Missão
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Criar Soluções Visuais:</strong> Desenvolver lentes e instrumentos de alta tecnologia que proporcionem a melhor experiência visual individualizada.
+                  <br>
+                  <strong>Avançar na Ciência:</strong> Revolucionar a indústria da ótica com pesquisa fundamental e aplicações industriais.
+                  <br>
+                  <strong>Melhorar a Vida:</strong> Melhorar a qualidade de vida dos pacientes e promover o acesso à saúde
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Visão
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                <strong>Liderança e Inovação:</strong> Ser a referência em soluções de alta tecnologia que moldam mercados, com foco em software e métodos ágeis.
+                <br>
+                <strong>Parceria de Sucesso:</strong> Construir parcerias de longo prazo, baseando o desenvolvimento de produtos nas necessidades reais dos clientes.
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Valores
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                <strong>Sustentabilidade:</strong> Compromisso com a redução de emissões (meta de neutralidade até 2024/25) e utilização de energia verde.
+                <br>
+                <strong>Inovação e Curiosidade:</strong> Foco em superar convenções e oferecer produtos de alta tecnologia (ex: ZEISS DriveSafe, i.Profilerplus).
+                <br>
+                <strong>Qualidade e Personalização:</strong> Reconhecer que "ninguém vê como você", focando em soluções personalizadas e conforto visual ideal.  
+                </div>
+              </div>
+            </div>
+          </div>
           </aside>
         </div>
        </div>
@@ -181,33 +313,54 @@
     
     <!--Footer -->
      <footer class="bg-dark text-light mt-5">
-  <div class="container py-4">
-    <div class="row">
+      <div class="container py-4">
+        <div class="row">
 
-      <!-- Trabalhe Conosco -->
-      <div class="col-md-4">
-        <h5>Trabalhe Conosco</h5>
-        <p>Faça parte da nossa equipe e cresça com a gente.</p>
-        <a href="#" class="btn btn-outline-light btn-sm">Enviar currículo</a>
+          
+
+          <!-- Contatos -->
+          <div class="col-md-4">
+            <h5>Contato da Zeiss 1</h5>
+            <p>Email: zeisschapeco1@gmail.com</p>
+            <p>Telefone: (49) 3026-5050</p>
+            <p>E Ed.Imperador - R. Florianópolis, 45 - Sala 03 - Centro, Chapecó - SC, 89812-120</p>
+          </div>
+
+
+          <div class="col-md-4">
+            <h5>Contato da Zeiss 2</h5>
+            <p>Email: zeisschapeco2@gmail.com</p>
+            <p>Telefone: (49) 3026-5050</p>
+            <p>E Ed.Imperador - R. Florianópolis, 45 - Sala 03 - Centro, Chapecó - SC, 89812-120</p>
+          </div>
+
+          <!-- Trabalhe Conosco -->
+          <div class="col-md-4">
+            <h5>Trabalhe Conosco</h5>
+            <p>Faça parte da nossa equipe e cresça com a gente.</p>
+
+            <nav>
+              <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modalTrabalhe">
+                Enviar currículo
+              </button>
+            </nav>
+          </div>
+
+          <!-- Instagram -->
+          <div class="col-md-4 text-center">
+            <h5>Instagram</h5>
+            <p>Acompanhe nossas novidades</p>
+            <nav>
+              <a href="https://www.instagram.com/zeissvisioncenterchapeco/" 
+                class="text-light d-block text-decoration-none" 
+                target="_blank">
+                @zeissvisioncenterchapeco
+              </a>
+            </nav>
+          </div>
+
+        </div>
       </div>
-
-      <!-- Instagram -->
-      <div class="col-md-4 text-center">
-        <h5>Instagram</h5>
-        <p>Acompanhe nossas novidades</p>
-        <a href="#" class="text-light">📸 @zeisschapeco</a>
-      </div>
-
-      <!-- Contato -->
-      <div class="col-md-4">
-        <h5>Contato</h5>
-        <p>Email: contato@zeisschapeco.com</p>
-        <p>Telefone: (49) 99999-9999</p>
-        <p>Chapecó - SC</p>
-      </div>
-
-    </div>
-  </div>
 
   <!-- Linha final -->
   <div class="bg-secondary text-center py-2">

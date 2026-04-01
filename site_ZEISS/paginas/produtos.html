@@ -6,9 +6,80 @@
     <title>ZEISS</title>
     <link rel="stylesheet" href="../styleprodutos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styleprodutos.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/menu.js"></script>
   </head>
+
+
+
+
+
+ <!--Enio do Curriculo pos clicar no botão do curriculo -->
+
+  <div class="modal fade" id="modalTrabalhe" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Cabeçalho -->
+      <div class="modal-header">
+        <h5 class="modal-title">Trabalhe Conosco</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Corpo -->
+      <div class="modal-body">
+        <form>
+
+          <div class="mb-3">
+            <label class="form-label">Nome</label>
+            <input type="text" class="form-control" placeholder="Seu nome completo">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="seuemail@gmail.com">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Telefone</label>
+            <input type="tel" class="form-control" placeholder="(00) 00000-0000">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Área de interesse</label>
+            <select class="form-select">
+              <option>Selecione</option>
+              <option>Vendas</option>
+              <option>Administrativo</option>
+              <option>Técnico em Ótica</option>
+            </select>
+          </div>
+
+
+          <div class="mb-3">
+            <label class="form-label">Currículo</label>
+            <input type="file" class="form-control">
+          </div>
+
+        </form>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
   <body>
     <!--Header-->
     <div class="row">
@@ -43,6 +114,7 @@
       </div> 
 <!--Lentes -->
       <main>
+        <article>
        <section class="container mt-5">
           <div class="text-center mb-4">
               <h1>Tipos de Lentes</h1>
@@ -55,7 +127,7 @@
                       <img src="../imagens/Captura de tela 2026-03-30 155938.png" class="card-img-top" alt="">
                       <div class="card-body">
                           <h5 class="card-title">Lentes Visão Simples</h5>
-                          <p class="card-text">Ideais para correção de miopia, hipermetropia ou astigmatismo.</p>
+                          <p class="card-text">Ideais para correção de miopia, hipermetropia ou    astigmatismo.          </p>
                           <a href="#simples" class="btn btn-primary">Ver catálogo</a>
                       </div>
                   </div>
@@ -68,17 +140,6 @@
                           <h5 class="card-title">Lentes Progressivas</h5>
                           <p class="card-text">Permitem enxergar de perto, intermediário e longe sem trocar de óculos.</p>
                           <a href="#progressiva" class="btn btn-primary">Ver catálogo</a>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="col-auto">
-                  <div class="card h-100 shadow-sm">
-                      <img src="../imagens/Captura de tela 2026-03-30 160855.png" class="card-img-top" alt="">
-                      <div class="card-body">
-                          <h5 class="card-title">Lentes Digitais</h5>
-                          <p class="card-text">Mais conforto para uso prolongado em celulares e computadores.</p>
-                          <a href="#" class="btn btn-primary">Ver catálogo</a>
                       </div>
                   </div>
               </div>
@@ -98,7 +159,7 @@
                         
                     </div>
                     <div class="col-md-6">
-                        <h2 class="text-primary">Lentes de visão simples da ZEISS</h2>
+                        <h1 class="mt-5">Lentes de visão simples da ZEISS</h1>
                         <p>Todas as lentes de visão simples produzidas pela ZEISS foram desenhadas tendo como foco a qualidade da visão, a aparência estética e o conforto durante o uso. Se os seus clientes necessitam de lentes de leitura ou de uma solução para corrigir ametropia, você encontrará uma opção adequada na nossa gama de lentes de visão simples.
                         As lentes de visão simples da ZEISS incluem a máxima proteção UV.</p>
                     </div>
@@ -106,7 +167,7 @@
             </div>
 
   
-        <h2>
+        <h2 class="mt-5">
           Lentes de visão simples ZEISS SmartLife
         </h2>
         <p>Adequadas para clientes a partir dos 6 anos que desejam uma visão mais nítida e confortável quando alternam entre os mundos online e offline. Estar constantemente conectado e em movimento pode ser exaustivo para os seus olhos. Com um desempenho óptico aperfeiçoado, 94% das pessoas afirmam que perceberam campos visuais mais amplos e confortáveis, nas tarefas a distâncias próximas e intermediárias</p>
@@ -168,7 +229,7 @@
 
 
  <!--Lentes Simples Drive safe  -->
-        <h2>
+        <h2 class="mt-5">
           Lentes de visão simples ZEISS DriveSafe
         </h2>
         <p>Ideais para os clientes que possuem um par de óculos para o uso diário. As lentes de visão simples ZEISS DriveSafe oferecem uma melhor visão em condições de fraca luminosidade, para uma condução mais segura e confortável. Além disso, diminuem o encandeamento noturno provocado pelos automóveis ou pela iluminação pública.</p>
@@ -219,7 +280,7 @@
         </div>
 
  <!--Lentes Simples PERSONALIZADA   -->
-        <h2>
+        <h2 class="mt-5">
           Lentes de visão simples personalizadas da ZEISS
         </h2>
         <p> 
@@ -276,7 +337,7 @@
         </div>
 
 
-        <h2>
+        <h2 class="mt-5">
           Lentes ZEISS Standard Single Vision
         </h2>
         <p> 
@@ -365,14 +426,14 @@
                         
                     </div>
                     <div class="col-md-6">
-                        <h2 class="text-primary">Lentes progressivas ZEISS</h2>
+                        <h1 class="mt-5">Lentes progressivas ZEISS</h1>
                         <p>Com a tecnologia ZEISS Freeform, você pode oferecer aos seus clientes de lentes progressivas soluções otimizadas para as suas necessidades visuais específicas. Graças aos excelentes padrões de fabricação, as nossas lentes progressivas de qualidade superior fornecem uma transição suave em toda a lente, para onde quer que o usuário esteja olhando. Todas as nossas lentes Freeform incolores também oferecem máxima proteção UV.</p>
                     </div>
                 </div>
             </div>
 
   
-        <h2>
+        <h2 class="mt-5">
          Lentes progressivas ZEISS SmartLife
         </h2>
         <p>As nossas lentes progressivas mais sofisticadas. A ZEISS concebeu e produziu o portfólio SmartLife para atender às necessidades visuais dos clientes conectados e em movimento. Suportadas pela tecnologia ZEISS SmartView 2.0, desenvolvida com base na investigação sobre o estilo de vida atual, o comportamento visual e as necessidades individuais específicas da faixa etária. As lentes progressivas ZEISS SmartLife têm um design híbrido, ou seja, as zonas nítidas e desfocadas estão equilibradas. Como resultado, há uma transição suave para as zonas desfocadas e amplos campos de visão em todas as distâncias e direções. Isso proporciona ao usuário uma adaptação rápida e confortável e uma visão nítida a qualquer distância e em todas as direções.</p>
@@ -380,12 +441,13 @@
           <div class="row g-4">
 
             
-            <div class="col-md-4">   
+
+            <div class="col-md-4">
               <div class="card h-100 shadow-sm">
-                  <img src="../imagens/Captura de tela 2026-03-30 171141.png" class="card-img-top" alt="ZEISS SmartLife Individual 3">
-                  <div class="card-body" style="text-align: left;"> <h5 class="card-title text-primary">ZEISS SmartLife Individual 3</h5>
-                      
-                      <p class="card-text">
+                <img src="../imagens/Captura de tela 2026-03-30 171141.png" class="card-img-top" alt="ZEISS SmartLife Individual 3">
+                <div class="card-body">
+                  <h5 class="card-title">ZEISS SmartLife Individual 3</h5>
+                   <p class="card-text">
                           <strong>A nossa melhor solução:</strong> Desenvolvidas para necessidades visuais complexas e visão desfocada em todas as distâncias.
                       </p>
 
@@ -404,10 +466,12 @@
                           <p class="mb-0" style="font-size: 0.85rem;">
                               <strong>Adições:</strong> +0,75D a +4,00D
                           </p>
-                      </div>
-                  </div>
+                </div>
               </div>
             </div>
+             </div>
+            
+            
 
            
             <div class="col-md-4">
@@ -447,7 +511,7 @@
 
 
  <!--Lentes Simples Drive safe  -->
-        <h2>
+        <h2 class="mt-5">
           Lentes de visão simples ZEISS DriveSafe
         </h2>
         <p>Ideais para os clientes que possuem um par de óculos para o uso diário. As lentes de visão simples ZEISS DriveSafe oferecem uma melhor visão em condições de fraca luminosidade, para uma condução mais segura e confortável. Além disso, diminuem o encandeamento noturno provocado pelos automóveis ou pela iluminação pública.</p>
@@ -498,7 +562,7 @@
         </div>
 
  <!--Lentes Simples PERSONALIZADA   -->
-        <h2>
+        <h2 class="mt-5">
           Lentes de visão simples personalizadas da ZEISS
         </h2>
         <p> 
@@ -555,7 +619,7 @@
         </div>
 
 
-        <h2>
+        <h2 class="mt-5">
           Lentes ZEISS Standard Single Vision
         </h2>
         <p> 
@@ -633,71 +697,69 @@
         </section>
       
 
-      
-
-      <div class="container mt-5">
-          <h2>Fale conosco</h2>
-          <p>Como podemos te ajudar?</p>
-
-          <form>
-
-            <div class="mb-3">
-              <label class="form-label">Assunto da sua solicitação *</label>
-              <input type="text" class="form-control" required>
-            </div>
-
-            <div class="mb-3">
-              <label class="form-label">Sua solicitação *</label>
-              <textarea class="form-control" rows="4" required></textarea>
-            </div>
-
-            <div class="mb-3">
-              <label class="form-label">E-mail *</label>
-              <input type="email" class="form-control" required>
-            </div>
-
-            <div class="mb-3">
-              <label class="form-label">Número de telefone</label>
-              <input type="tel" class="form-control">
-            </div>
-
-            <div class="row">
-              <div class="col-md-6 mb-3">
-                <label class="form-label">Nome *</label>
-                <input type="text" class="form-control" required>
-              </div>
-
-              <div class="col-md-6 mb-3">
-                <label class="form-label">Sobrenome *</label>
-                <input type="text" class="form-control" required>
-              </div>
-            </div>
-
-            <div class="mb-3">
-              <label class="form-label">Empresa *</label>
-              <input type="text" class="form-control" required>
-            </div>
-
-            <div class="mb-4">
-              <label class="form-label">Localização *</label>
-              <input type="text" class="form-control" required>
-            </div>
-
-            <p style="font-size: 0.9rem; color: gray;">
-              As informações introduzidas no formulário de contato serão utilizadas pela Zeiss Vision Center Chapecó para responder ao seu pedido por e-mail ou telefone.
-            </p>
-
-            <button type="submit" class="btn btn-primary mt-3">Enviar</button>
-
-          </form>
-        </div>
 
 
 
              
 
-
+        </article>
     </main>
+     <!--Footer -->
+     <footer class="bg-dark text-light mt-5">
+      <div class="container py-4">
+        <div class="row">
+
+          <!-- Instagram -->
+          <div class="col-md-4 text-center">
+            <h5>Instagram</h5>
+            <p>Acompanhe nossas novidades</p>
+            <nav>
+              <a href="https://www.instagram.com/zeissvisioncenterchapeco/" 
+                class="text-light d-block text-decoration-none" 
+                target="_blank">
+                @zeissvisioncenterchapeco
+              </a>
+            </nav>
+          </div>
+
+          <!-- Contatos -->
+          <div class="col-md-4">
+            <h5>Contato da Zeiss 1</h5>
+            <p>Email: zeisschapeco1@gmail.com</p>
+            <p>Telefone: (49) 3026-5050</p>
+            <p>E Ed.Imperador - R. Florianópolis, 45 - Sala 03 - Centro, Chapecó - SC, 89812-120</p>
+          </div>
+
+
+          <div class="col-md-4">
+            <h5>Contato da Zeiss 2</h5>
+            <p>Email: zeisschapeco2@gmail.com</p>
+            <p>Telefone: (49) 3026-5050</p>
+            <p>E Ed.Imperador - R. Florianópolis, 45 - Sala 03 - Centro, Chapecó - SC, 89812-120</p>
+          </div>
+
+          <!-- Trabalhe Conosco -->
+          <div class="col-md-4">
+            <h5>Trabalhe Conosco</h5>
+            <p>Faça parte da nossa equipe e cresça com a gente.</p>
+
+            <nav>
+              <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modalTrabalhe">
+                Enviar currículo
+              </button>
+            </nav>
+          </div>
+
+          
+
+        </div>
+      </div>
+
+  <!-- Linha final -->
+  <div class="bg-secondary text-center py-2">
+    <small>© 2026 Zeiss Vision Center Chapecó - Todos os direitos reservados</small>
+  </div>
+</footer>
 </body>
 
 </html>
