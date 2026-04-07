@@ -13,7 +13,7 @@ body {
   padding: 20px;
 }
 
-/* ===== CORES ZEISS ===== */
+/* ===== CORES  */
 :root {
   --zeiss-blue: #003a8f;
   --zeiss-light-blue: #0050b3;
@@ -106,7 +106,7 @@ header img:hover {
   transform: scale(1.03);
 }
 
-/* ===== CONTEÚDO (ESTILO REVISTA) ===== */
+/*escrita */
 .article-home{
   max-width: 1000px;
   margin: 50px auto;
@@ -129,7 +129,7 @@ section:hover {
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
 }
 
-/* ===== TÍTULO PRINCIPAL ===== */
+/* ===== TÍTULO ===== */
 h1 {
   font-size: 34px;
   font-weight: 600;
@@ -147,7 +147,7 @@ p {
   text-align: justify;
 }
 
-/* ===== PRIMEIRO PARÁGRAFO DESTACADO ===== */
+/* ===== PRIMEIRO PARÁGRAFO ===== */
 section p:first-of-type {
   font-size: 19px;
   color: #222;

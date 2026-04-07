@@ -39,7 +39,7 @@ header img:hover {
 }
 
 /* NAVBAR */
-/* ===== NAVBAR ===== */
+
 .nav {
   display: flex;
   justify-content: flex-end;
@@ -100,7 +100,7 @@ header img:hover {
 }
 
 .card img {
-  width: 100%; /* corrigido */
+  width: 100%; 
   height: 200px;
   object-fit: cover;
 }
@@ -114,7 +114,7 @@ header img:hover {
   text-align: center;
 }
 
-/* TEXTO / ARTIGO */
+
 article {
   max-width: 1000px;
   margin: 50px auto;
@@ -135,6 +135,6 @@ h1 {
 }
 
 h2 {
-  margin-bottom: 20px; /* corrigido */
+  margin-bottom: 20px; 
   color: var(--zeiss-blue);
 }
